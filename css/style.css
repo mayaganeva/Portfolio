@@ -7,22 +7,25 @@
 /* ---------------- Typography ---------------- */
 
 body {
-    text-align: center;
     font: 24px 'Clash Display', sans-serif;
 }
 
-.heading__name {
+.heading__title {
     text-transform: uppercase;
     font-size: 6rem;
 }
 
 /* ---------------- Navigation ---------------- */
 
-.nav__link {
-    text-decoration: none;
+.nav {
+    list-style-type: none;
     text-transform: uppercase;
     font-size: 1.6rem;
     font-weight: 500;
+}
+
+.nav__link {
+    text-decoration: none;
 }
 
 .btn {
@@ -45,5 +48,8 @@ body {
 
 /* ---------------- Footer ---------------- */
 
+footer {
+    text-align: center;
+}
 
 /* ---------------- Responsive ---------------- */
