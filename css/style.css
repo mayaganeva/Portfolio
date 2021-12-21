@@ -10,23 +10,16 @@ body {
     font: 24px 'Clash Display', sans-serif;
 }
 
+.heading {
+    text-align: center;
+}
+
 .heading__title {
     text-transform: uppercase;
     font-size: 6rem;
 }
 
-/* ---------------- Navigation ---------------- */
-
-.nav {
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-
-.nav__link {
-    text-decoration: none;
-}
+/* ---------------- Elements ---------------- */
 
 .btn {
     display: inline-block;
@@ -35,6 +28,29 @@ body {
     text-decoration: none;
     margin: 1em;
     padding: .75em 1.75em;
+}
+
+/* ---------------- Navigation ---------------- */
+
+ul {
+    list-style-type: none;
+}
+
+.nav, h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.nav {
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.75rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* ---------------- Gallery ---------------- */
