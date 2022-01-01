@@ -1,12 +1,20 @@
+
+/* ---------------- General ---------------- */
+
 * {
     margin: 0;
     box-sizing: border-box;
-    color: #191919;
+    color: var(--accent-color);
 }
 
 section, aside {
     margin-bottom: 3rem;
-    margin-left: 5rem;
+}
+
+:root {
+    --accent-color: #191919;
+    --gallery-hover: #3b3b3b;
+    --skills-bar-bg: #e9e9e9;
 }
 
 /* ---------------- Typography ---------------- */
@@ -16,7 +24,7 @@ body {
 }
 
 p {
-    margin-bottom: .30rem;
+    margin-bottom: .3rem;
 }
 
 .heading {
@@ -24,8 +32,10 @@ p {
 }
 
 .heading__title {
+    margin: 1rem 3rem;
     text-transform: uppercase;
-    font-size: 6rem;
+    line-height: 1;
+    font-size: clamp(3rem, 10vw + 40%, 7rem);
 }
 
 .section-header {
@@ -36,7 +46,7 @@ p {
 
 .btn {
     display: inline-block;
-    background-color: #191919;
+    background-color: var(--accent-color);
     color: white;
     text-decoration: none;
     margin: 1em;
@@ -81,7 +91,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #3b3b3b url(http://unsplash.it/800/800) no-repeat center center;
+    background: var(--gallery-hover) url(http://unsplash.it/800/800) no-repeat center center;
     background-size: cover;
     color: transparent;
     transition: all ease-in-out 150ms;
@@ -126,7 +136,10 @@ ul {
 
 .bio__photo {
     background-image: url("http://unsplash.it/320/320");
-    width: 20rem;
+    width: min(100%, 20rem);
+
+    /* work on this ^ */
+    
     height: 20rem;
 }
 
@@ -139,14 +152,14 @@ ul {
 
 .skills__bar {
     height: 1rem;
-    background: #e9e9e9;
+    background: var(--skills-bar-bg);
     margin-bottom: 1.5rem;
 }
 
 .skills__bar > span {
     display: block;
     height: 100%;
-    background: #191919;
+    background: var(--accent-color);
 }
 
 
