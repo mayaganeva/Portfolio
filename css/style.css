@@ -1,7 +1,7 @@
 
 /* ---------------- General ---------------- */
 
-* {
+*, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
     color: var(--accent-color);
@@ -23,8 +23,8 @@ body {
     font: 24px 'Clash Display', sans-serif;
 }
 
-p {
-    margin-bottom: .3rem;
+p, figure {
+    margin-bottom: 1rem;
 }
 
 .heading {
@@ -55,8 +55,16 @@ p {
 
 /* ---------------- Navigation ---------------- */
 
-ul {
-    list-style: none;
+header {
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
 }
 
 .nav, h3 {
@@ -64,11 +72,10 @@ ul {
     font-weight: 500;
 }
 
-.nav {
-    margin: 1rem 2rem;
+.nav ul {
     display: flex;
-    justify-content: flex-end;
     gap: 1.75rem;
+    list-style: none;
 }
 
 .nav__link {
@@ -141,6 +148,16 @@ ul {
     /* work on this ^ */
     
     height: 20rem;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 5rem;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 5rem;
 }
 
 .skills__labels,
