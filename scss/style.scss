@@ -1,6 +1,8 @@
 
 // ---------------- General ----------------
 
+@import url(https://api.fontshare.com/css?f[]=clash-display@1&display=swap);
+
 $accent-color: #191919;
 $gallery-hover: #3b3b3b;
 $skills-bar-bg: #e9e9e9;
@@ -11,18 +13,20 @@ $skills-bar-bg: #e9e9e9;
     color: $accent-color;
 }
 
+// ---------------- Layout ----------------
+
 section, aside {
     margin-bottom: 3rem;
+}
+
+p, figure {
+    margin-bottom: 1rem;
 }
 
 // ---------------- Typography ----------------
 
 body {
-    font: 24px 'Clash Display', sans-serif;
-}
-
-p, figure {
-    margin-bottom: 1rem;
+    font: 1.5rem 'Clash Display', sans-serif;
 }
 
 .heading {
@@ -66,20 +70,23 @@ header {
     height: 30px;
 }
 
-.nav, h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-}
+.nav {
 
-.nav ul {
-    display: flex;
-    gap: 1.75rem;
-    list-style: none;
-}
+    &, h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
 
-.nav__link {
-    text-decoration: none;
-    text-transform: uppercase;
+    & ul {
+        display: flex;
+        gap: 1.75rem;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
 }
 
 // ---------------- Gallery ----------------
@@ -160,6 +167,7 @@ blockquote::after {
 }
 
 .skills {
+
     &__labels,
     &__stats {
         display: flex;
@@ -171,12 +179,12 @@ blockquote::after {
         height: 1rem;
         background: $skills-bar-bg;
         margin-bottom: 1.5rem;
-    }
-    
-    &__bar > span {
-        display: block;
-        height: 100%;
-        background: $accent-color;
+
+        & > span {
+            display: block;
+            height: 100%;
+            background: $accent-color;
+        }
     }
 }
 

@@ -1,3 +1,4 @@
+@import url(https://api.fontshare.com/css?f[]=clash-display@1&display=swap);
 *, *::before, *::after {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -9,12 +10,12 @@ section, aside {
   margin-bottom: 3rem;
 }
 
-body {
-  font: 24px 'Clash Display', sans-serif;
-}
-
 p, figure {
   margin-bottom: 1rem;
+}
+
+body {
+  font: 1.5rem 'Clash Display', sans-serif;
 }
 
 .heading {
@@ -59,7 +60,7 @@ header {
   height: 30px;
 }
 
-.nav, h3 {
+.nav, .nav h3 {
   font-size: 1.6rem;
   font-weight: 500;
 }
