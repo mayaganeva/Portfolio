@@ -3,6 +3,13 @@
 
 body {
     font: 1.5rem 'Clash Display', sans-serif;
+    color: $accent-color;
+}
+
+a,
+.nav__link {
+    text-decoration: none;
+    color: $accent-color;
 }
 
 .heading {

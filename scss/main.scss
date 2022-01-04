@@ -1,14 +1,14 @@
 
 @import 'abstracts/variables';
 
-@import 'base/reset';
-@import 'base/typography';
-
-@import 'components/button';
-@import 'components/images';
-@import 'components/stats';
+@import 'base/normalize';
+@import 'base/_typography.scss';
 
 @import 'layout/body';
 @import 'layout/footer';
 @import 'layout/gallery';
 @import 'layout/navigation';
+
+@import 'components/button';
+@import 'components/images';
+@import 'components/stats';
