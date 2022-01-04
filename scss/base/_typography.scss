@@ -1,0 +1,32 @@
+
+@import url(https://api.fontshare.com/css?f[]=clash-display@1&display=swap);
+
+body {
+    font: 1.5rem 'Clash Display', sans-serif;
+}
+
+.heading {
+    text-align: center;
+
+    &__title {
+        margin: 1rem 3rem;
+        text-transform: uppercase;
+        line-height: 1;
+        // font-size: clamp(3rem, 10vw + 40%, 7rem);
+        font-size: calc(10vw + 40%);
+
+        &--small {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 5rem;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 5rem;
+}

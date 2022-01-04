@@ -1,0 +1,54 @@
+
+.gallery {
+    margin: 2em 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $gallery-hover url(http://unsplash.it/800/800) no-repeat center center;
+        background-size: cover;
+        color: transparent;
+        transition: all ease-in-out 150ms;
+
+        &:hover {
+            background-blend-mode: multiply;
+            color: white;
+        }
+
+        &.small {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+        
+        &.narrow {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+        
+        &.medium {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        
+        &.big {
+            grid-row: span 3;
+            grid-column: span 3;
+        }
+        
+        &.tall {
+            grid-row: span 3;
+            grid-column: span 2;
+        }
+        
+        &.wide {
+            grid-row: span 2;
+            grid-column: span 3;
+        }
+    }
+}
