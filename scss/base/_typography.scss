@@ -19,12 +19,26 @@ a,
         margin: 1rem 3rem;
         text-transform: uppercase;
         line-height: 1;
+        letter-spacing: .3rem;
         // font-size: clamp(3rem, 10vw + 40%, 7rem);
         font-size: calc(10vw + 40%);
 
         &--small {
             margin-bottom: 1.5rem;
         }
+
+        &--kerning {
+            letter-spacing: -1rem;
+        }
+
+        & span:first-child {
+            padding-right: 1rem;
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        margin-top: 0;
     }
 }
 

@@ -308,11 +308,25 @@ a,
   margin: 1rem 3rem;
   text-transform: uppercase;
   line-height: 1;
+  letter-spacing: .3rem;
   font-size: calc(10vw + 40%);
 }
 
 .heading__title--small {
   margin-bottom: 1.5rem;
+}
+
+.heading__title--kerning {
+  letter-spacing: -1rem;
+}
+
+.heading__title span:first-child {
+  padding-right: 1rem;
+}
+
+.heading h2 {
+  font-weight: 500;
+  margin-top: 0;
 }
 
 blockquote::before {
@@ -450,7 +464,6 @@ header {
 
 .bio__photo {
   background-image: url("http://unsplash.it/320/320");
-  /* work on this ^ */
   height: 20rem;
 }
 
