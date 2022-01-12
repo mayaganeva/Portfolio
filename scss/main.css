@@ -339,6 +339,16 @@ blockquote::after {
   font-size: 5rem;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 section, aside {
   margin-bottom: 3rem;
 }
