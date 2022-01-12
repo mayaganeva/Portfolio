@@ -1,22 +1,18 @@
 
 .skills {
 
-    &__labels,
-    &__stats {
-        display: flex;
-        flex-flow: column nowrap;
-        max-width: 20rem;
-    }
-    
     &__bar {
         height: 1rem;
         background: $skills-bar-bg;
-        margin-bottom: 1.5rem;
 
         & > span {
             display: block;
             height: 100%;
             background: $accent-color;
         }
+    }
+
+    &__label {
+        line-height: 0;
     }
 }
