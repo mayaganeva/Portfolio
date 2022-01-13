@@ -355,6 +355,11 @@ blockquote::after {
   width: 33%;
 }
 
+.bio__photo {
+  background-image: url("http://unsplash.it/320/320");
+  height: 20rem;
+}
+
 .story {
   width: 63%;
 }
@@ -471,21 +476,16 @@ header {
   text-transform: uppercase;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
 .btn {
   display: inline-block;
   background-color: #191919;
   color: white;
   padding: .75em 1.75em;
-}
-
-.logo {
-  width: 30px;
-  height: 30px;
-}
-
-.bio__photo {
-  background-image: url("http://unsplash.it/320/320");
-  height: 20rem;
 }
 
 .skills__bar {
