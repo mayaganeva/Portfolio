@@ -1,14 +1,46 @@
+// header {
+//     margin: 1rem 2rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+
+// .nav {
+
+//     &, h3 {
+//         font-size: 1.6rem;
+//         font-weight: 500;
+//     }
+
+//     ul {
+//         display: flex;
+//         gap: 1.75rem;
+//         list-style: none;
+//     }
+
+//     &__link {
+//         text-transform: uppercase;
+//     }
+// }
+
+// .logo {
+//     width: 40px;
+//     height: 40px;
+// }
+
 header {
-    margin: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
 }
 
 .nav {
+    display: none;
 
     &, h3 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 
@@ -24,6 +56,12 @@ header {
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.hamburger {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: .4rem;
 }

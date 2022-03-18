@@ -1,3 +1,6 @@
+
+// Write a fallback!!!
+
 @supports (display: grid) {
     
     .gallery {
@@ -53,4 +56,11 @@
             }
         }
     }
+
+    @media (max-width: 600) {
+        .gallery {
+            background-color: firebrick ;
+        }
+    }
 }
+

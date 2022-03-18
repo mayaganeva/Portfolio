@@ -302,6 +302,7 @@ a,
 
 .heading {
   text-align: center;
+  margin-top: 7rem;
 }
 
 .heading__title {
@@ -358,6 +359,7 @@ blockquote::after {
 .bio__photo {
   background-image: url("http://unsplash.it/320/320");
   height: 20rem;
+  margin-bottom: 2em;
 }
 
 .story {
@@ -438,23 +440,26 @@ footer {
     grid-row: span 2;
     grid-column: span 3;
   }
+  @media (max-width: 600) {
+    .gallery {
+      background-color: firebrick;
+    }
+  }
 }
 
 header {
-  margin: 1rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 1.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav {
+  display: none;
 }
 
 .nav, .nav h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -471,8 +476,14 @@ header {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.hamburger {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: .4rem;
 }
 
 .btn {
