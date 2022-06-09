@@ -340,6 +340,13 @@ blockquote::after {
   font-size: 5rem;
 }
 
+@media (max-width: 500px) {
+  .heading__title {
+    letter-spacing: -2rem;
+    background: blue;
+  }
+}
+
 .container {
   width: 80%;
   max-width: 1100px;
@@ -448,18 +455,20 @@ footer {
 }
 
 header {
-  margin: 1.5rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.nav {
-  display: none;
+  margin: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav, .nav h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -476,14 +485,8 @@ header {
 }
 
 .logo {
-  width: 2.2rem;
-  height: 2.2rem;
-}
-
-.hamburger {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: .4rem;
+  width: 1em;
+  height: auto;
 }
 
 .btn {
